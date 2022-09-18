@@ -1,0 +1,42 @@
+@import '/src/static/scss/variables';
+
+.wrapper {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid $primaryColor;
+    transition: all 0.2s;
+    .left {
+        display: flex;
+        justify-content: center;
+        img {
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        span {
+            padding: 0 10px;
+            color: #fff;
+        }
+    }
+    &:hover {
+        background-color: $primaryColor;
+        .right span {
+            color: #b90101;
+        }
+    }
+}
+
+.link {
+    line-height: 0;
+    text-decoration: none;
+}

@@ -1,0 +1,16 @@
+@import '/src/static/scss/variables';
+
+.wrapper {
+    height: 75%;
+    width: 650px;
+    background-color: #fff;
+    border: 2px solid $accentColor;
+    border-radius: 20px;
+    background: $primaryColor;
+    box-shadow: 0 0 15px #b3b3b3, 0 0 15px #b3b3b3;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

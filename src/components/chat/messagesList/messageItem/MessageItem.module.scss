@@ -1,0 +1,93 @@
+@import '/src/static/scss/variables';
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    animation: enter 0.5s cubic-bezier(1, -0.21, 0.66, 1.09);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .left {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            // border: 2px $accentColor solid;
+        }
+    }
+
+    .right {
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            .name {
+                font-size: 14px;
+                font-weight: 200;
+                color: $secondaryColor;
+                text-align: right;
+            }
+        }
+        .bottom {
+            width: 100%;
+            height: 80%;
+            margin: 8px 0;
+            span {
+                position: relative;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+
+.myMessage {
+    background-color: #f3d5d5;
+}
+
+@keyframes enter {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.link {
+    word-wrap: break-word;
+    img {
+        line-height: 0;
+    }
+    text-decoration: none;
+    font-style: none;
+    color: #b9010188;
+}
+
+.sendedTime {
+    position: relative;
+    right: 5px;
+
+    span {
+        font-size: 14px;
+        color: $accentColor;
+    }
+}

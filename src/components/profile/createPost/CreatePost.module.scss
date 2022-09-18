@@ -1,0 +1,82 @@
+@import '/src/static/scss/variables';
+
+.wrapper {
+    margin-top: 20px;
+    min-height: 50px;
+    width: 650px;
+    background-color: #fff;
+    border: 2px solid $accentColor;
+    border-radius: 20px;
+    background: $primaryColor;
+    box-shadow: 0 0 15px #b3b3b3, 0 0 15px #b3b3b3;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: relative;
+    textarea {
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        resize: none;
+        width: 80%;
+        height: 150px;
+    }
+    .send {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 21px;
+            border-radius: 10px;
+            border: none;
+            span {
+                width: 30px;
+                height: 30px;
+            }
+            &:hover {
+                background-color: #f3d5d5;
+            }
+        }
+    }
+}
+
+.showEmojiButton {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 21px;
+        border-radius: 10px;
+        border: none;
+    }
+}
+
+.emojiPicker {
+    visibility: hidden;
+    position: absolute;
+    top: -300px;
+    left: -300px;
+}
+
+.showEmoji {
+    visibility: visible;
+}

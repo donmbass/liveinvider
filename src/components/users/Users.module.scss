@@ -1,0 +1,48 @@
+@import '/src/static/scss/variables';
+
+.wrapper {
+    margin-top: 30px;
+    height: 600px;
+    width: 450px;
+    background-color: #fff;
+    border: 2px solid $accentColor;
+    border-radius: 20px;
+    background: $primaryColor;
+    box-shadow: 0 0 15px #b3b3b3, 0 0 15px #b3b3b3;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.users {
+    animation: enter 1s cubic-bezier(1, -0.21, 0.66, 1.09);
+}
+
+.title {
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+}
+
+.userList {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+@keyframes enter {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

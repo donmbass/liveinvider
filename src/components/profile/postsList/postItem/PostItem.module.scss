@@ -1,0 +1,125 @@
+@import '/src/static/scss/variables';
+
+.wrapper {
+    height: auto;
+    width: 650px;
+    background-color: #fff;
+    border: 2px solid $accentColor;
+    border-radius: 20px;
+    background: $primaryColor;
+    box-shadow: 0 0 5px #b3b3b3, 0 0 5px #b3b3b3;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    .left {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: start;
+        img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+    }
+
+    .right {
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            .name {
+                font-size: 14px;
+                font-weight: 200;
+                color: $secondaryColor;
+                text-align: right;
+            }
+        }
+        .bottom {
+            width: 100%;
+            height: 80%;
+            margin: 8px 0;
+            span {
+                position: relative;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+
+.content {
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.myMessage {
+    background-color: #f3d5d5;
+}
+
+@keyframes enter {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.link {
+    word-wrap: break-word;
+    img {
+        line-height: 0;
+    }
+    text-decoration: none;
+    font-style: none;
+    color: #b9010188;
+}
+
+.sendedTime {
+    position: relative;
+    right: 15px;
+
+    span {
+        font-size: 14px;
+        color: $accentColor;
+    }
+}
+
+.deleteButton {
+    position: absolute;
+    right: -5px;
+    top: 0;
+    cursor: pointer;
+    span {
+        font-size: 16px;
+        transition: all 0.5s;
+    }
+    transition: all 0.5s;
+    &:hover {
+        transform: rotate(180deg) scale(1.4);
+        span {
+            color: $accentColor;
+        }
+    }
+}
+
+.postData {
+    word-break: break-all;
+}

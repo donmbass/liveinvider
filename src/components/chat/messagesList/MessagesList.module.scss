@@ -1,0 +1,33 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.scroll {
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.loaderMessages {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaderMain {
+    top: 0;
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
